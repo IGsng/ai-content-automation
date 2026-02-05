@@ -1,0 +1,77 @@
+# Core dependencies
+python>=3.10
+
+# LLM & AI
+ollama-python==0.3.1
+openai==1.54.3
+langchain==0.3.7
+langchain-community==0.3.5
+
+# Video processing
+ffmpeg-python==0.2.0
+imageio==2.36.1
+imageio-ffmpeg==0.5.1
+opencv-python==4.10.0.84
+pillow==10.4.0
+
+# Audio & TTS
+torch==2.5.1
+torchaudio==2.5.1
+omegaconf==2.3.0
+silero-models==0.1.0
+elevenlabs==1.18.2
+pydub==0.25.1
+
+# Video generation APIs
+replicate==1.0.4
+fal-client==0.5.5
+
+# Social media APIs
+requests==2.32.3
+httpx==0.27.2
+
+# Data & Storage
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+redis==5.2.0
+alembic==1.14.0
+
+# Configuration
+python-dotenv==1.0.1
+pyyaml==6.0.2
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# CLI & UI
+click==8.1.7
+rich==13.9.4
+tqdm==4.67.1
+
+# Scheduling
+apscheduler==3.10.4
+
+# Web framework (для dashboard)
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+jinja2==3.1.4
+
+# Utilities
+python-dateutil==2.9.0
+pytz==2024.2
+validators==0.34.0
+
+# Testing
+pytest==8.3.4
+pytest-cov==6.0.0
+pytest-asyncio==0.24.0
+faker==33.1.0
+
+# Monitoring
+sentry-sdk==2.19.2
+prometheus-client==0.21.1
+
+# Development
+black==24.10.0
+flake8==7.1.1
+mypy==1.13.0
+isort==5.13.2
