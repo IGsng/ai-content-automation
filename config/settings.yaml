@@ -1,0 +1,77 @@
+# Основные настройки системы
+
+generation:
+  default_duration: 45
+  default_style: energetic
+  video_quality: high
+  audio_quality: high
+  
+topics:
+  - космос
+  - наука
+  - технологии
+  - история
+  - психология
+  - природа
+  - биология
+  - физика
+  - медицина
+  - изобретения
+
+styles:
+  - energetic
+  - calm
+  - dramatic
+  - humorous
+  - mysterious
+
+video:
+  resolution:
+    width: 1080
+    height: 1920
+  fps: 30
+  format: mp4
+  codec: h264
+  bitrate: 5000k
+
+audio:
+  sample_rate: 48000
+  bitrate: 192k
+  format: aac
+
+platforms:
+  tiktok:
+    enabled: true
+    max_duration: 180
+    aspect_ratio: "9:16"
+  
+  instagram:
+    enabled: true
+    max_duration: 90
+    aspect_ratio: "9:16"
+  
+  youtube:
+    enabled: true
+    max_duration: 60
+    aspect_ratio: "9:16"
+
+scheduling:
+  enabled: false
+  videos_per_day: 3
+  hours:
+    - "09:00"
+    - "15:00"
+    - "21:00"
+  timezone: Europe/Moscow
+
+cache:
+  enabled: true
+  ttl: 3600
+  max_size_mb: 1000
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/app.log
+  max_bytes: 10485760
+  backup_count: 5
